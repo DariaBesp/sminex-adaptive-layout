@@ -1,0 +1,201 @@
+.about-city {
+    margin: 0 0 120px;
+
+    @include vp-1023 {
+        margin: 0 0 80px;
+    }
+
+    @include vp-767 {
+        margin: 0 0 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        align-items: center;
+        justify-content: center;
+
+        @include vp-1023 {
+            gap: 80px;
+        }
+
+        @include vp-767 {
+            gap: 60px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        padding: 0;
+        margin: 0;
+
+        @include vp-1023 {
+            grid-template-columns: repeat(2, minmax(220px, 266px));
+        }
+
+        @include vp-767 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    &__item {
+        display: flex;
+
+        @include vp-1023 {
+            &--right {
+                display: none;
+            }
+        }
+
+        @include vp-767 {
+            height: 100%;
+        }
+    }
+
+    &__text-card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $color-fallow;
+        border-radius: 600px 600px 0 0;
+        border-bottom: none;
+        height: 100%;
+        min-width: 380px;
+        width: 100%;
+
+        @include vp-1023 {
+            min-width: 266px;
+        }
+
+        @include vp-767 {
+            padding: 25px 13px;
+            min-width: 220px;
+        }
+    }
+
+    &__logo-icon {
+        margin: 0 0 30px 0;
+        width: 110px;
+        height: 146px;
+
+        @include vp-1023 {
+            margin: 0 0 20px 0;
+            width: 70px;
+            height: 94px;
+        }
+
+        @include vp-767 {
+            width: 60px;
+            height: 80px;
+        }
+    }
+
+    &__logo-text {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $color-fallow ;
+        margin: 0 0 10px 0;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 5px 0;
+        }
+
+        @include vp-767 {
+            font-size: 10px;
+            line-height: 14px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__title-text {
+        font-size: 44px;
+        line-height: 50px;
+        letter-spacing: -0.08em;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 40px 0;
+        font-family: $ff-tenor;
+
+        @include vp-1023 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__icon-geo {
+        margin: 0 0 15px 0;
+        width: 24px;
+        height: 24px;
+
+        @include vp-1023 {
+            margin: 0 0 10px 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        @include vp-767 {
+            margin: 0 0 5px 0;
+        }
+    }
+
+    &__note-text {
+        font-size: 18px;
+        line-height: 26px;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__quote {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-fallow;
+        margin: 0;
+
+        @include vp-1023 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__img {
+        border-radius: 0 0 600px 600px;
+        height: 100%;
+
+        @include vp-767 {
+            max-width: 220px;
+        }
+    }
+}

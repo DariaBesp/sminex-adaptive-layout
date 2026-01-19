@@ -1,0 +1,114 @@
+.benefit-park {
+    margin: 0 0 120px;
+
+    @include vp-1023 {
+        margin: 0 0 80px;
+    }
+
+    @include vp-767 {
+        margin: 0 0 60px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        @include vp-1023 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 48px;
+        }
+
+        @include vp-767 {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+    &__description {
+        margin-left: auto;
+        max-width: 500px;
+
+        @include vp-767 {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-family: $ff-tenor;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: $color-fallow;
+        margin: 0 0 30px 0;
+        padding: 0;
+        max-width: 440px;
+        font-weight: 400;
+
+        @include vp-1023 {
+            font-size: 24px;
+            line-height: 30px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        position: relative;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 0 16px;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            background: $color-fallow;
+            left: -10px;
+            top: 10px;
+            border-radius: 50%;
+
+            @include vp-1023 {
+                left: -14px;
+                top: 8px;
+            }
+        }
+
+        &:not(:last-child) {
+            margin: 0 0 15px 16px;
+        }
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 0 14px;
+
+
+            &:not(:last-child) {
+                margin: 0 0 10px 14px;
+            }
+        }
+    }
+}
