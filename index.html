@@ -1,399 +1,654 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Фрунзенская набережная - Sminex - ИНТЕКО</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Фрунзенская набережная - Sminex - ИНТЕКО</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <div class="header__left-col">
-          <button class="header__menu" type="button" aria-label="Переключатель меню">
-            <svg class="header__menu-icon" width="60" height="23" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <a class="header__logo-link" href="#" aria-label="Переход на главную страницу">
-            <svg class="header__logo" width="114" height="26" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-header-logo"></use>
-            </svg>
-          </a>
-        </div>
-        <span class="header__page">«Фрунзенская набережная»</span>
-        <div class="header__right-col">
-          <a class="header__link" href="#">Выбрать недвижимость</a>
-          <a class="header__phone" href="tel:+74951851408" aria-label="Позвонить в компанию">
-            <span class="header__phone-text">+7 495 185 14 08</span>
-            <svg class="header__phone-icon" width="24" height="24" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-phone"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <picture>
-        <source media="(max-width:767px)" srcset="/images/hero-bg-mobile.jpg 1x, /images/hero-bg-mobile@2x.jpg 2x">
-        <source media="(max-width:1023px)" srcset="/images/hero-bg-tablet.jpg 1x, /images/hero-bg-tablet@2x.jpg 2x">
-        <img class="hero__img" src="/images/hero-bg.jpg" srcset="/images/hero-bg@2x.jpg 2x" height="740"
-          alt="Изображено здание">
-      </picture>
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">Элитный клубный город-парк в&nbsp;москве</h1>
-        </div>
-      </div>
-    </section>
-    <section class="about-city">
-      <div class="container">
-        <div class="about-city__wrapper">
-          <h2 class="visually-hidden">Клубный город-парк, Фрунзенская набережная, 30</h2>
-          <ul class="about-city__list">
-            <li class="about-city__item">
-              <div class="about-city__card">
-                <picture>
-                  <source media="(max-width:767px)"
-                    srcset="/images/about-city-1-mobile.jpg 1x, /images/about-city-1-mobile@2x.jpg 2x">
-                  <source media="(max-width:1023px)"
-                    srcset="/images/about-city-1-tablet.jpg 1x, /images/about-city-1-tablet@2x.jpg 2x">
-                  <img class="about-city__img" src="/images/about-city-1.jpg" srcset="/images/about-city-1@2x.jpg 2x"
-                    width="456" height="600" alt="Изображено здание">
-                </picture>
-              </div>
-            </li>
-            <li class="about-city__item">
-              <div class="about-city__text-card">
-                <svg class="about-city__logo-icon" width="110" height="146" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#logo-city"></use>
-                </svg>
-                <span class="about-city__logo-text">клубный город-парк</span>
-                <span class="about-city__title-text">ФРУНЗЕНСКАЯ <br> НАБЕРЕЖНАЯ</span>
-                <svg class="about-city__icon-geo" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-geo"></use>
-                </svg>
-                <span class="about-city__note-text">Фрунзенская набережная, 30</span>
-              </div>
-            </li>
-            <li class="about-city__item about-city__item--right">
-              <div class="about-city__card">
-                <img class="about-city__img" src="/images/about-city-2.jpg" srcset="/images/about-city-2@2x.jpg 2x"
-                  width="456" height="600" alt="Изображено здание">
-              </div>
-            </li>
-          </ul>
-          <blockquote class="about-city__quote"> &laquo;ФРУНЗЕНСКАЯ НАБЕРЕЖНАЯ&raquo; &mdash;<br>
-            ДОЛГОЖДАННЫЙ И&nbsp;НЕПОВТОРИМЫЙ ЭЛИТНЫЙ<br>
-            КЛУБНЫЙ ГОРОД-ПАРК В&nbsp;ПРЕСТИЖНОМ И&nbsp;ЖЕЛАННОМ МЕСТЕ</blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section class="background-center">
-      <h2 class="visually-hidden"> Клубный город-парк в престижном месте</h2>
-    </section>
-
-    <section class="advantages">
-      <div class="container">
-        <h2 class="visually-hidden"> Инфраструктура клубного города-парка</h2>
-        <div class="advantages__wrapper">
-          <div class="advantages__description">
-            <span class="advantages__description-title">Только для своих создана лучшая в&nbsp;своём классе насыщенная
-              инфраструктура:</span>
-            <ul class="advantages__description-list">
-              <li class="advantages__description-item">самый большой витражный парк (3,1&nbsp;га) с&nbsp;соснами
-                и&nbsp;зонами отдыха у&nbsp;воды;</li>
-              <li class="advantages__description-item">Clubhouse&nbsp;&mdash; беспрецедентный инфраструктурный центр
-                в&nbsp;отдельном здании для здоровья, детей
-                и&nbsp;общения;</li>
-              <li class="advantages__description-item">соседский центр для знакомства и&nbsp;общения людей своего круга;
-              </li>
-              <li class="advantages__description-item">богатейшая инфраструктура для детей&nbsp;&mdash; детская
-                площадка, игровой центр и&nbsp;бассейн;</li>
-              <li class="advantages__description-item">фитнес с&nbsp;25-метровым бассейном и&nbsp;спа;</li>
-              <li class="advantages__description-item">площадка для командных видов спорта на&nbsp;улице, единственная
-                в&nbsp;элитном классе;</li>
-              <li class="advantages__description-item">более 150 вариантов квартир и&nbsp;особые атрибуты: частные
-                бассейны, патио, видовые террасы, дровяные камины, потолки
-                высотой до&nbsp;7&nbsp;метров;</li>
-              <li class="advantages__description-item">редкие для центра города форматы жилья.</li>
-              <li class="advantages__description-item">захватывающие виды на&nbsp;парк Горького, Нескучный сад, Кремль
-                и&nbsp;Москву-реку;</li>
-            </ul>
+        <div class="header__content">
+          <div class="header__left-col">
+            <button
+              class="header__menu"
+              type="button"
+              aria-label="Переключатель меню"
+            >
+              <svg
+                class="header__menu-icon"
+                width="60"
+                height="23"
+                aria-hidden="true"
+              >
+                <use xlink:href="./images/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <a
+              class="header__logo-link"
+              href="#"
+              aria-label="Переход на главную страницу"
+            >
+              <svg
+                class="header__logo"
+                width="114"
+                height="26"
+                aria-hidden="true"
+              >
+                <use xlink:href="./images/sprite.svg#icon-header-logo"></use>
+              </svg>
+            </a>
           </div>
-          <div class="advantages__card">
-            <ul class="advantages__card-list">
-              <li class="advantages__card-item">
-                <div class="advantages__card-subitem">
-                  <span class="advantages__note-number">3,1</span>
-                  <span class="advantages__note-value">Га</span>
-                </div>
-                <span class="advantages__note-name">Двор-парк</span>
-              </li>
-              <li class="advantages__card-item">
-                <svg class="advantages__icon advantages__icon--margin-bottom" width="40" height="40" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-waves"></use>
-                </svg>
-                <div class="advantages__card-subitem">
-                  <span class="advantages__note-number">25</span>
-                  <span class="advantages__note-value">м</span>
-                </div>
-                <span class="advantages__note-name">Бассейн в фитнесе</span>
-              </li>
-              <li class="advantages__card-item">
-                <div class="advantages__card-subitem">
-                  <span class="advantages__note-number">730</span>
-                  <span class="advantages__note-value">м&sup2;</span>
-                </div>
-                <span class="advantages__note-name">Развивающих детских пространств</span>
-                <svg class="advantages__icon advantages__icon--margin-top" width="40" height="40" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-playground"></use>
-                </svg>
-              </li>
-              <li class="advantages__card-item">
-                <div class="advantages__card-subitem advantages__card-subitem--center">
-                  <span class="advantages__note-number">150</span>
-                  <span class="advantages__note-value">+</span>
-                </div>
-                <span class="advantages__note-name">Вариантов квартир</span>
-              </li>
-            </ul>
+          <span class="header__page">«Фрунзенская набережная»</span>
+          <div class="header__right-col">
+            <a class="header__link" href="#">Выбрать недвижимость</a>
+            <a
+              class="header__phone"
+              href="tel:+74951851408"
+              aria-label="Позвонить в компанию"
+            >
+              <span class="header__phone-text">+7 495 185 14 08</span>
+              <svg
+                class="header__phone-icon"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="benefit-park">
-      <div class="container">
-        <div class="benefit-park__wrapper">
-          <div class="benefit-park__inner">
-            <picture>
-              <source media="(max-width:767px)"
-                srcset="/images/benefit-park-mobile.jpg 1x, /images/benefit-park-mobile@2x.jpg 2x">
-              <source media="(max-width:1023px)"
-                srcset="/images/benefit-park-tablet.jpg 1x, /images/benefit-park-tablet@2x.jpg 2x">
-              <img class="benefit-park__img" src="/images/benefit-park.jpg" srcset="/images/benefit-park@2x.jpg 2x"
-                alt="Фото парка сверху" width="700" height="700">
-            </picture>
+    </header>
+    <main>
+      <section class="hero">
+        <picture>
+          <source
+            media="(max-width:767px)"
+            srcset="
+              ./images/hero-bg-mobile.jpg    1x,
+              ./images/hero-bg-mobile@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width:1023px)"
+            srcset="
+              ./images/hero-bg-tablet.jpg    1x,
+              ./images/hero-bg-tablet@2x.jpg 2x
+            "
+          />
+          <img
+            class="hero__img"
+            src="./images/hero-bg.jpg"
+            srcset="./images/hero-bg@2x.jpg 2x"
+            height="740"
+            alt="Изображено здание"
+          />
+        </picture>
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              Элитный клубный город-парк в&nbsp;москве
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="about-city">
+        <div class="container">
+          <div class="about-city__wrapper">
+            <h2 class="visually-hidden">
+              Клубный город-парк, Фрунзенская набережная, 30
+            </h2>
+            <ul class="about-city__list">
+              <li class="about-city__item">
+                <div class="about-city__card">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/about-city-1-mobile.jpg    1x,
+                        ./images/about-city-1-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1023px)"
+                      srcset="
+                        ./images/about-city-1-tablet.jpg    1x,
+                        ./images/about-city-1-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="about-city__img"
+                      src="./images/about-city-1.jpg"
+                      srcset="./images/about-city-1@2x.jpg 2x"
+                      width="456"
+                      height="600"
+                      alt="Изображено здание"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="about-city__item">
+                <div class="about-city__text-card">
+                  <svg
+                    class="about-city__logo-icon"
+                    width="110"
+                    height="146"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="./images/sprite.svg#logo-city"></use>
+                  </svg>
+                  <span class="about-city__logo-text">клубный город-парк</span>
+                  <span class="about-city__title-text"
+                    >ФРУНЗЕНСКАЯ <br />
+                    НАБЕРЕЖНАЯ</span
+                  >
+                  <svg
+                    class="about-city__icon-geo"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="./images/sprite.svg#icon-geo"></use>
+                  </svg>
+                  <span class="about-city__note-text"
+                    >Фрунзенская набережная, 30</span
+                  >
+                </div>
+              </li>
+              <li class="about-city__item about-city__item--right">
+                <div class="about-city__card">
+                  <img
+                    class="about-city__img"
+                    src="./images/about-city-2.jpg"
+                    srcset="./images/about-city-2@2x.jpg 2x"
+                    width="456"
+                    height="600"
+                    alt="Изображено здание"
+                  />
+                </div>
+              </li>
+            </ul>
+            <blockquote class="about-city__quote">
+              &laquo;ФРУНЗЕНСКАЯ НАБЕРЕЖНАЯ&raquo; &mdash;<br />
+              ДОЛГОЖДАННЫЙ И&nbsp;НЕПОВТОРИМЫЙ ЭЛИТНЫЙ<br />
+              КЛУБНЫЙ ГОРОД-ПАРК В&nbsp;ПРЕСТИЖНОМ И&nbsp;ЖЕЛАННОМ МЕСТЕ
+            </blockquote>
+          </div>
+        </div>
+      </section>
 
-            <div class="benefit-park__description">
-              <h2 class="benefit-park__title">самый большой в&nbsp;элитном сегменте двор-парк 3,1&nbsp;га</h2>
-              <ul class="benefit-park__list">
-                <li class="benefit-park__item">множество маршрутов для прогулок и&nbsp;тихие зоны у&nbsp;воды;</li>
-                <li class="benefit-park__item">витражный парк под соснами с&nbsp;насыщенным всесезонным озеленением;
+      <section class="background-center">
+        <h2 class="visually-hidden">Клубный город-парк в престижном месте</h2>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">Инфраструктура клубного города-парка</h2>
+          <div class="advantages__wrapper">
+            <div class="advantages__description">
+              <span class="advantages__description-title"
+                >Только для своих создана лучшая в&nbsp;своём классе насыщенная
+                инфраструктура:</span
+              >
+              <ul class="advantages__description-list">
+                <li class="advantages__description-item">
+                  самый большой витражный парк (3,1&nbsp;га) с&nbsp;соснами
+                  и&nbsp;зонами отдыха у&nbsp;воды;
                 </li>
-                <li class="benefit-park__item">оазисы комфорта&nbsp;&mdash; зелёные комнаты с&nbsp;мягкой мебелью
-                  и&nbsp;шезлонгами;</li>
-                <li class="benefit-park__item">многофункциональная площадка для командных видов спорта
-                  (360&nbsp;кв.&nbsp;м), зона воркаута, пространство для йоги
-                  и&nbsp;медитации;</li>
-                <li class="benefit-park__item">детская игровая площадка (600&nbsp;кв.&nbsp;м) самая большая
-                  в&nbsp;элитном
-                  классе.</li>
+                <li class="advantages__description-item">
+                  Clubhouse&nbsp;&mdash; беспрецедентный инфраструктурный центр
+                  в&nbsp;отдельном здании для здоровья, детей и&nbsp;общения;
+                </li>
+                <li class="advantages__description-item">
+                  соседский центр для знакомства и&nbsp;общения людей своего
+                  круга;
+                </li>
+                <li class="advantages__description-item">
+                  богатейшая инфраструктура для детей&nbsp;&mdash; детская
+                  площадка, игровой центр и&nbsp;бассейн;
+                </li>
+                <li class="advantages__description-item">
+                  фитнес с&nbsp;25-метровым бассейном и&nbsp;спа;
+                </li>
+                <li class="advantages__description-item">
+                  площадка для командных видов спорта на&nbsp;улице,
+                  единственная в&nbsp;элитном классе;
+                </li>
+                <li class="advantages__description-item">
+                  более 150 вариантов квартир и&nbsp;особые атрибуты: частные
+                  бассейны, патио, видовые террасы, дровяные камины, потолки
+                  высотой до&nbsp;7&nbsp;метров;
+                </li>
+                <li class="advantages__description-item">
+                  редкие для центра города форматы жилья.
+                </li>
+                <li class="advantages__description-item">
+                  захватывающие виды на&nbsp;парк Горького, Нескучный сад,
+                  Кремль и&nbsp;Москву-реку;
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__card">
+              <ul class="advantages__card-list">
+                <li class="advantages__card-item">
+                  <div class="advantages__card-subitem">
+                    <span class="advantages__note-number">3,1</span>
+                    <span class="advantages__note-value">Га</span>
+                  </div>
+                  <span class="advantages__note-name">Двор-парк</span>
+                </li>
+                <li class="advantages__card-item">
+                  <svg
+                    class="advantages__icon advantages__icon--margin-bottom"
+                    width="40"
+                    height="40"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="./images/sprite.svg#icon-waves"></use>
+                  </svg>
+                  <div class="advantages__card-subitem">
+                    <span class="advantages__note-number">25</span>
+                    <span class="advantages__note-value">м</span>
+                  </div>
+                  <span class="advantages__note-name">Бассейн в фитнесе</span>
+                </li>
+                <li class="advantages__card-item">
+                  <div class="advantages__card-subitem">
+                    <span class="advantages__note-number">730</span>
+                    <span class="advantages__note-value">м&sup2;</span>
+                  </div>
+                  <span class="advantages__note-name"
+                    >Развивающих детских пространств</span
+                  >
+                  <svg
+                    class="advantages__icon advantages__icon--margin-top"
+                    width="40"
+                    height="40"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="./images/sprite.svg#icon-playground"></use>
+                  </svg>
+                </li>
+                <li class="advantages__card-item">
+                  <div
+                    class="advantages__card-subitem advantages__card-subitem--center"
+                  >
+                    <span class="advantages__note-number">150</span>
+                    <span class="advantages__note-value">+</span>
+                  </div>
+                  <span class="advantages__note-name">Вариантов квартир</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="benefit-park">
+        <div class="container">
+          <div class="benefit-park__wrapper">
+            <div class="benefit-park__inner">
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/benefit-park-mobile.jpg    1x,
+                    ./images/benefit-park-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./images/benefit-park-tablet.jpg    1x,
+                    ./images/benefit-park-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="benefit-park__img"
+                  src="./images/benefit-park.jpg"
+                  srcset="./images/benefit-park@2x.jpg 2x"
+                  alt="Фото парка сверху"
+                  width="700"
+                  height="700"
+                />
+              </picture>
 
-    <section class="insert">
-      <div class="container">
-        <h2 class="visually-hidden">Площадь двора-парка</h2>
-        <div class="insert__wrapper">
-          <svg class="insert__icon-left" width="16" height="16" aria-hidden="true">
-            <use xlink:href="images/sprite.svg#arrow-left"></use>
-          </svg>
-          <svg class="insert__icon-right" width="16" height="16" aria-hidden="true">
-            <use xlink:href="images/sprite.svg#arrow-right"></use>
-          </svg>
-          <div class="insert__inner">
-            <div class="insert__text">
-              <span class="insert__text-number">3,1</span>
-              <span class="insert__text-unit">Га</span>
+              <div class="benefit-park__description">
+                <h2 class="benefit-park__title">
+                  самый большой в&nbsp;элитном сегменте двор-парк 3,1&nbsp;га
+                </h2>
+                <ul class="benefit-park__list">
+                  <li class="benefit-park__item">
+                    множество маршрутов для прогулок и&nbsp;тихие зоны
+                    у&nbsp;воды;
+                  </li>
+                  <li class="benefit-park__item">
+                    витражный парк под соснами с&nbsp;насыщенным всесезонным
+                    озеленением;
+                  </li>
+                  <li class="benefit-park__item">
+                    оазисы комфорта&nbsp;&mdash; зелёные комнаты с&nbsp;мягкой
+                    мебелью и&nbsp;шезлонгами;
+                  </li>
+                  <li class="benefit-park__item">
+                    многофункциональная площадка для командных видов спорта
+                    (360&nbsp;кв.&nbsp;м), зона воркаута, пространство для йоги
+                    и&nbsp;медитации;
+                  </li>
+                  <li class="benefit-park__item">
+                    детская игровая площадка (600&nbsp;кв.&nbsp;м) самая большая
+                    в&nbsp;элитном классе.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="insert__note">площадь двора-парка</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="architecture">
-      <div class="container">
-        <div class="architecture__wrapper">
-          <div class="architecture__top">
-            <h2 class="architecture__title">лучшая архитектура своей эпохи</h2>
-            <span class="architecture__note">В&nbsp;едином ансамбле переплетены три узнаваемых архитектурных
-              стиля</span>
-          </div>
-          <ul class="architecture__list">
-            <li class="architecture__item">
-              <picture class="architecture__picture">
-                <source media="(max-width:767px)"
-                  srcset="/images/architecture-1-mobile.jpg 1x, /images/architecture-1-mobile@2x.jpg 2x">
-                <source media="(max-width:1023px)"
-                  srcset="/images/architecture-1-tablet.jpg 1x, /images/architecture-1-tablet@2x.jpg 2x">
-                <img class="architecture__img" src="/images/architecture-1.jpg"
-                  srcset="/images/architecture-1@2x.jpg 2x" width="400" height="700"
-                  alt="Фото здания  в виде стеклянных башен">
-              </picture>
-              <span class="architecture__img-note">СТЕКЛЯННЫЕ БАШНИ <br> В&nbsp;СОВРЕМЕННОМ СТИЛЕ</span>
-            </li>
-            <li class="architecture__item">
-              <picture class="architecture__picture">
-                <source media="(max-width:767px)"
-                  srcset="/images/architecture-2-mobile.jpg 1x, /images/architecture-2-mobile@2x.jpg 2x">
-                <source media="(max-width:1023px)"
-                  srcset="/images/architecture-2-tablet.jpg 1x, /images/architecture-2-tablet@2x.jpg 2x">
-                <img class="architecture__img architecture__img--top-border" src="/images/architecture-2.jpg"
-                  srcset="/images/architecture-2@2x.jpg 2x" width="400" height="700"
-                  alt="Фото здания  в стиле сталинского ампера">
-              </picture>
-              <span class="architecture__img-note">ВЕЛИЧЕСТВЕННЫЙ ДОМ В&nbsp;СТИЛЕ СТАЛИНСКИЙ АМПИР
-                С&nbsp;ВИДАМИ
-                НА&nbsp;НАБЕРЕЖНУЮ</span>
-            </li>
-            <li class="architecture__item">
-              <picture class="architecture__picture">
-                <source media="(max-width:767px)"
-                  srcset="/images/architecture-3-mobile.jpg 1x, /images/architecture-3-mobile@2x.jpg 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="/images/architecture-3-tablet.jpg 1x, /images/architecture-3-tablet@2x.jpg 2x">
-                <img class="architecture__img" src="/images/architecture-3.jpg"
-                  srcset="/images/architecture-3@2x.jpg 2x" width="400" height="700"
-                  alt="Фото здания  в стиле авангард">
-              </picture>
-              <span class="architecture__img-note">ДОМА В&nbsp;СТИЛЕ АВАНГАРД ВОКРУГ ЦЕНТРАЛЬНОГО ПАРКА
-              </span>
-            </li>
-          </ul>
-
-
-        </div>
-
-      </div>
-    </section>
-    <section class="option">
-      <div class="container">
-        <div class="option__wrapper">
-          <div class="option__left-col">
-            <h2 class="option__title">роскошные квартиры, виллы и пентхаусы</h2>
-            <p class="option__description">Редкие форматы: квартиры с&nbsp;потолками 7&nbsp;метров и&nbsp;антресолями,
-              флетхаусы и&nbsp;двухэтажные ситихаусы,
-              пентхаусы с&nbsp;бассейном, виллы с&nbsp;частным патио.</p>
-            <a class="option__link" href="#">Оставить заявку</a>
-          </div>
-          <div class="option__right-col">
-            <div class="option__text-card">
-              <span class="option__card-title">150</span>
-              <span class="option__card-note">ВАРИАНТОВ ПЛАНИРОВОЧНЫХ РЕШЕНИЙ</span>
-            </div>
-            <picture class="option__picture">
-              <source media="(max-width:767px)" srcset="/images/option-mobile.jpg 1x, /images/option-mobile@2x.jpg 2x">
-              <source media="(max-width:1023px)" srcset="/images/option-tablet.jpg 1x,/images/option-tablet@2x.jpg 2x">
-              <img class="option__img" src="/images/option.jpg" alt="Фото помещения/квартиры">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="background-outro">
-      <h2 class="visually-hidden"> Офис компании Sminex</h2>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-        <div class="footer__left">
-          <a href="#" class="footer__logo-link" aria-label="Переход на главную страницу">
-            <svg width="149" height="34" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+      <section class="insert">
+        <div class="container">
+          <h2 class="visually-hidden">Площадь двора-парка</h2>
+          <div class="insert__wrapper">
+            <svg
+              class="insert__icon-left"
+              width="16"
+              height="16"
+              aria-hidden="true"
+            >
+              <use xlink:href="./images/sprite.svg#arrow-left"></use>
             </svg>
-          </a>
-          <div class="footer__contacts">
-            <a class="footer__link" href="mailto:contact-center@sminex.com">contact-center@sminex.com</a>
-            <a class="footer__phone" href="tel:+74954315390">+7 (495) 431-53-90</a>
+            <svg
+              class="insert__icon-right"
+              width="16"
+              height="16"
+              aria-hidden="true"
+            >
+              <use xlink:href="./images/sprite.svg#arrow-right"></use>
+            </svg>
+            <div class="insert__inner">
+              <div class="insert__text">
+                <span class="insert__text-number">3,1</span>
+                <span class="insert__text-unit">Га</span>
+              </div>
+              <span class="insert__note">площадь двора-парка</span>
+            </div>
           </div>
-          <ul class="footer__social socials">
-            <li class="socials__item">
-              <a class="socials__link" href="#" aria-label="Ссылка на whatsapp">
-                <svg width="20" height="20" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-whatsapp"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#" aria-label="Ссылка на Телеграм">
-                <svg width="22" height="18" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-tg"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#" aria-label="Ссылка на ВКонтакте">
-                <svg width="24" height="14" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#" aria-label="Ссылка на youtube">
-                <svg width="22" height="16" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#" aria-label="Ссылка на Дзен">
-                <svg width="20" height="20" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-dzen"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#" aria-label="Ссылка на HH">
-                <svg width="20" height="20" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-hh"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
-        <div class="footer__right">
-          <ul class="footer__link-list">
-            <li class="footer__link-item">
-              <a class="footer__link" href="#">Коротко о нас</a>
-            </li>
-            <li class="footer__link-item">
-              <a class="footer__link" href="#">Работодатель №1</a>
-            </li>
-            <li class="footer__link-item">
-              <a class="footer__link" href="#">Создаем уникальные проекты</a>
-            </li>
-            <li class="footer__link-item">
-              <a class="footer__link" href="#">Информационный центр</a>
-            </li>
-            <li class="footer__link-item">
-              <a class="footer__link" href="#">Служба комфорта</a>
-            </li>
-            <li class="footer__link-item">
-              <a class="footer__link" href="#">Sminex Club</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer__copyright">&copy;&nbsp;2007-2024&nbsp;ООО &laquo;Смайнэкс Управление Активами&raquo;, адрес:
-        119017, Москва, Кадашёвская набережная, д. 6/1/2с1, тел.:&nbsp;+7&nbsp;495&nbsp;324&nbsp;72&nbsp;11, факс:
-        +7&nbsp;(495)&nbsp;125-02-57
-      </p>
-    </div>
-  </footer>
-</body>
+      </section>
 
+      <section class="architecture">
+        <div class="container">
+          <div class="architecture__wrapper">
+            <div class="architecture__top">
+              <h2 class="architecture__title">
+                лучшая архитектура своей эпохи
+              </h2>
+              <span class="architecture__note"
+                >В&nbsp;едином ансамбле переплетены три узнаваемых архитектурных
+                стиля</span
+              >
+            </div>
+            <ul class="architecture__list">
+              <li class="architecture__item">
+                <picture class="architecture__picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/architecture-1-mobile.jpg    1x,
+                      ./images/architecture-1-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:1023px)"
+                    srcset="
+                      ./images/architecture-1-tablet.jpg    1x,
+                      ./images/architecture-1-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="architecture__img"
+                    src="./images/architecture-1.jpg"
+                    srcset="./images/architecture-1@2x.jpg 2x"
+                    width="400"
+                    height="700"
+                    alt="Фото здания  в виде стеклянных башен"
+                  />
+                </picture>
+                <span class="architecture__img-note"
+                  >СТЕКЛЯННЫЕ БАШНИ <br />
+                  В&nbsp;СОВРЕМЕННОМ СТИЛЕ</span
+                >
+              </li>
+              <li class="architecture__item">
+                <picture class="architecture__picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/architecture-2-mobile.jpg    1x,
+                      ./images/architecture-2-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:1023px)"
+                    srcset="
+                      ./images/architecture-2-tablet.jpg    1x,
+                      ./images/architecture-2-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="architecture__img architecture__img--top-border"
+                    src="./images/architecture-2.jpg"
+                    srcset="./images/architecture-2@2x.jpg 2x"
+                    width="400"
+                    height="700"
+                    alt="Фото здания  в стиле сталинского ампера"
+                  />
+                </picture>
+                <span class="architecture__img-note"
+                  >ВЕЛИЧЕСТВЕННЫЙ ДОМ В&nbsp;СТИЛЕ СТАЛИНСКИЙ АМПИР
+                  С&nbsp;ВИДАМИ НА&nbsp;НАБЕРЕЖНУЮ</span
+                >
+              </li>
+              <li class="architecture__item">
+                <picture class="architecture__picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/architecture-3-mobile.jpg    1x,
+                      ./images/architecture-3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./images/architecture-3-tablet.jpg    1x,
+                      ./images/architecture-3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="architecture__img"
+                    src="./images/architecture-3.jpg"
+                    srcset="./images/architecture-3@2x.jpg 2x"
+                    width="400"
+                    height="700"
+                    alt="Фото здания  в стиле авангард"
+                  />
+                </picture>
+                <span class="architecture__img-note"
+                  >ДОМА В&nbsp;СТИЛЕ АВАНГАРД ВОКРУГ ЦЕНТРАЛЬНОГО ПАРКА
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="option">
+        <div class="container">
+          <div class="option__wrapper">
+            <div class="option__left-col">
+              <h2 class="option__title">
+                роскошные квартиры, виллы и пентхаусы
+              </h2>
+              <p class="option__description">
+                Редкие форматы: квартиры с&nbsp;потолками 7&nbsp;метров
+                и&nbsp;антресолями, флетхаусы и&nbsp;двухэтажные ситихаусы,
+                пентхаусы с&nbsp;бассейном, виллы с&nbsp;частным патио.
+              </p>
+              <a class="option__link" href="#">Оставить заявку</a>
+            </div>
+            <div class="option__right-col">
+              <div class="option__text-card">
+                <span class="option__card-title">150</span>
+                <span class="option__card-note"
+                  >ВАРИАНТОВ ПЛАНИРОВОЧНЫХ РЕШЕНИЙ</span
+                >
+              </div>
+              <picture class="option__picture">
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/option-mobile.jpg    1x,
+                    ./images/option-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./images/option-tablet.jpg    1x,
+                    ./images/option-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="option__img"
+                  src="./images/option.jpg"
+                  alt="Фото помещения/квартиры"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="background-outro">
+        <h2 class="visually-hidden">Офис компании Sminex</h2>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__left">
+            <a
+              href="#"
+              class="footer__logo-link"
+              aria-label="Переход на главную страницу"
+            >
+              <svg width="149" height="34" aria-hidden="true">
+                <use xlink:href="./images/sprite.svg#icon-header-logo"></use>
+              </svg>
+            </a>
+            <div class="footer__contacts">
+              <a class="footer__link" href="mailto:contact-center@sminex.com"
+                >contact-center@sminex.com</a
+              >
+              <a class="footer__phone" href="tel:+74954315390"
+                >+7 (495) 431-53-90</a
+              >
+            </div>
+            <ul class="footer__social socials">
+              <li class="socials__item">
+                <a
+                  class="socials__link"
+                  href="#"
+                  aria-label="Ссылка на whatsapp"
+                >
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link"
+                  href="#"
+                  aria-label="Ссылка на Телеграм"
+                >
+                  <svg width="22" height="18" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#icon-tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link"
+                  href="#"
+                  aria-label="Ссылка на ВКонтакте"
+                >
+                  <svg width="24" height="14" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link"
+                  href="#"
+                  aria-label="Ссылка на youtube"
+                >
+                  <svg width="22" height="16" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Ссылка на Дзен">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#icon-dzen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Ссылка на HH">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#icon-hh"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <ul class="footer__link-list">
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Коротко о нас</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Работодатель №1</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Создаем уникальные проекты</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Информационный центр</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Служба комфорта</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Sminex Club</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          &copy;&nbsp;2007-2024&nbsp;ООО &laquo;Смайнэкс Управление
+          Активами&raquo;, адрес: 119017, Москва, Кадашёвская набережная, д.
+          6/1/2с1, тел.:&nbsp;+7&nbsp;495&nbsp;324&nbsp;72&nbsp;11, факс:
+          +7&nbsp;(495)&nbsp;125-02-57
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
